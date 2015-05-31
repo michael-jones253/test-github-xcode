@@ -7,11 +7,17 @@ Login on the Github website and create a repository. I did not initialize with a
 
 Copy the remote add command - I used the https one. Then on the command line on local mac change directory into the project directory, paste in the remote add command which in this case was:
 
+<pre>
+<code>
 git remote add origin https://github.com/michael-jones253/test-github-xcode.git
+</code>
+</pre>
 
 Go back into Xcode and select the menu option: source control-> push. Choose the remote repo.
 
 Can now add a README.md on the Github webpage. Then pull that README down to the local mac using source control -> pull.
 
-Any changes that are done in Xcode need to be committed locally first before pushing up to Github. Any changes done on the Github repository webpage need to be pulled down first into Xcode before pushing further changes up - an error dialog will pop up otherwise.
+Any changes that are done in Xcode need to be committed locally first before pushing up to Github. Any changes done on the Github repository webpage need to be pulled down first into Xcode before pushing further changes up - a conflict error dialog will pop up otherwise.
+
+If a conflict error occurs, don't panic - probably just forgotten to do the pull of say changes to README before trying to push from Xcode, so do a pull then re-try the push.
 
